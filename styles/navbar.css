@@ -6,8 +6,15 @@
 .nav-pc{
     width: 90%;
     margin: auto;
+    background-color: white;
+    z-index: 10;
 }
-
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: auto;
+}
 .nav{
     display: flex;
     justify-content: space-evenly;
@@ -56,6 +63,9 @@
     /* border-bottom: 1px solid darkred; */
     cursor:pointer;
 }
+.drop-item{
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
 .drop-item:hover{
     background-color: rgb(178,0,0);
     color: white;
@@ -65,6 +75,7 @@
     display: flex;
     align-items: center;
     padding: 0;
+    z-index: 10;
     /* border: 1px solid red; */
 }
 .annouce{
