@@ -265,6 +265,10 @@
         height: 60%;
         width: auto;
     }
+    .message{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 /* mob */
