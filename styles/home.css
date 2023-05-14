@@ -1,15 +1,19 @@
-*{
+* {
     transition: all .2s;
 }
+
 /* upper strap */
-.strap, .stcon, .stcontact{
+.strap,
+.stcon,
+.stcontact {
     display: flex;
     position: relative;
     justify-content: space-evenly;
     list-style-type: none;
     align-items: center;
 }
-.strap{
+
+.strap {
     margin: auto;
     justify-content: space-between;
     background-color: rgb(178, 0, 0);
@@ -19,25 +23,29 @@
     font-weight: 600;
     height: 1.5rem;
 }
-.btnstrap{
-    background-color: rgb(240, 240, 240); 
+
+.btnstrap {
+    background-color: rgb(240, 240, 240);
 }
-.stcon{
+
+.stcon {
     margin: 0;
     padding: 0;
 }
-.st{
+
+.st {
     border-right: 3px solid white;
     text-decoration: none;
     color: white;
     transform: translateY(5px);
 }
-.st:hover{
+
+.st:hover {
     color: rgb(225, 225, 225);
 }
 
 /* MMMUT name */
-.MMM-name{
+.MMM-name {
     margin: auto;
     display: flex;
     justify-content: space-evenly;
@@ -47,55 +55,62 @@
     /* overflow: hidden; */
 }
 
-.mmm-img{
+.mmm-img {
     width: auto;
     height: 80%;
     transform: scale(.8);
     mix-blend-mode: multiply;
 }
 
-.line{
+.line {
     margin: 0.2rem auto;
     width: 80%;
     background-color: rgb(81, 81, 81);
 }
 
 /* slider */
-.carousel{
+.carousel {
     aspect-ratio: 40/9;
     margin: 2rem auto;
     z-index: 0;
     width: 80%;
 }
-.slideimg{
+
+.slideimg {
     aspect-ratio: 40/9;
     width: 100%;
 }
 
 /* aboutMMM n message */
-.mmm-info{
+.mmm-info {
     display: flex;
     justify-content: space-between;
+    padding: 1rem;
     width: 85%;
     margin: auto;
+    box-shadow: 1px 1px 5px rgb(152, 152, 152);
+    border-radius: 5px;
 }
-.mmminf{
+
+.mmminf {
     width: 65%;
 }
-.mmm{
+
+.mmm {
     height: 10rem;
     margin: 0 1rem 0 1rem;
 }
 
-.message{
+.message {
     width: max-content;
 }
-.wel-con{
+
+.wel-con {
     display: flex;
 }
 
 /* message card */
-.message-card{
+.message-card {
     display: flex;
     padding: 5px;
     height: max-content;
@@ -104,33 +119,40 @@
     border: 1px solid grey;
     border-radius: 5px;
 }
-.Name{
+
+.Name {
     font-size: medium;
 }
-.post{
+
+.post {
     color: darkred;
     font-size: smaller;
 }
-.Name, .post{
+
+.Name,
+.post {
     margin: 0;
 }
-.det{
+
+.det {
     margin: auto;
     text-align: center;
 }
 
-.message-btn{
+.message-btn {
     border: 0;
     border-radius: 5px;
     background-color: rgb(176, 0, 0);
     color: white;
 }
-.message-btn:hover{
+
+.message-btn:hover {
     font-weight: 600;
     transform: translateY(-2px);
     box-shadow: 1px 3px 5px rgb(167, 167, 167);
 }
-.person{
+
+.person {
     aspect-ratio: 1/1;
     height: 4rem;
     border-radius: 100%;
@@ -138,133 +160,162 @@
 
 /* responsiveness */
 /* PC */
-@media only screen and (min-width: 1000px) and (max-width:1300px){
-    .MMM-name{
+@media only screen and (min-width: 1000px) and (max-width:1300px) {
+    .MMM-name {
         height: 7rem;
     }
-    .mmm-img{
+
+    .mmm-img {
         height: 60%;
         width: auto;
     }
 }
+
 @media only screen and (min-width: 800px) and (max-width: 1200px) {
-    .mmm-info{
+    .mmm-info {
         display: block;
     }
-    .message{
+
+    .message {
         display: flex;
         width: 100%;
         margin-top: 1rem;
     }
-    .message-card{
+
+    .message-card {
         /* display: flex; */
-        width:max-content;
-    }.msg{
+        width: max-content;
+    }
+
+    .msg {
         display: none;
     }
-    .mmminf{
+
+    .mmminf {
         width: 100%;
     }
-    .person{
+
+    .person {
         height: 3rem;
     }
-    .Name{
+
+    .Name {
         font-size: 12px;
     }
-    .post{
+
+    .post {
         font-size: 10px;
     }
-    .message-btn{
+
+    .message-btn {
         font-size: smaller;
     }
 }
+
 /* tab */
-@media only screen and (min-width: 760px) and (max-width:1000px){
-    .MMM-name{
+@media only screen and (min-width: 760px) and (max-width:1000px) {
+    .MMM-name {
         height: 6rem;
     }
-    .mmm-img{
+
+    .mmm-img {
         height: 60%;
         width: auto;
     }
 }
+
 /* mob */
-@media only screen and (max-width: 800px){
-    .stcon{
+@media only screen and (max-width: 800px) {
+    .stcon {
         display: none;
     }
-    .strap{
+
+    .strap {
         justify-content: flex-end;
     }
-    .wel-con{
+
+    .wel-con {
         display: block;
     }
-    .mmm-info{
+
+    .mmm-info {
         display: block;
         width: 100%;
     }
-    .mmminf{
+
+    .mmminf {
         margin: auto;
         width: 80%;
     }
-    .welcome, .msg{
+
+    .welcome,
+    .msg {
         text-align: center;
     }
-    .msg{
+
+    .msg {
         margin-top: 1rem;
     }
-    .message{
+
+    .message {
         width: 60%;
         margin: auto;
     }
-    .carousel{
+
+    .carousel {
         height: 10rem;
         width: 90%;
     }
-    .slideimg{
+
+    .slideimg {
         height: 10rem;
     }
 }
 
-@media only screen and (min-width: 500px) and (max-width: 760px){
-    .MMM-name{
+@media only screen and (min-width: 500px) and (max-width: 760px) {
+    .MMM-name {
         height: 5rem;
     }
-    .mmm-img{
+
+    .mmm-img {
         height: 60%;
         width: auto;
     }
-    
+
 }
 
-@media only screen and (min-width: 300px) and (max-width: 500px){
-    .MMM-name{
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    .MMM-name {
         height: 4rem;
     }
-    .mmm-img{
+
+    .mmm-img {
         height: 40%;
         width: auto;
         transform: scale(1.01);
     }
-    .strap{
+
+    .strap {
         /* width: 100%; */
         height: 1.4rem;
         padding: 0 !important;
     }
-    .person{
+
+    .person {
         height: 3rem;
     }
-    .mmm-info{
+
+    .mmm-info {
         /* border: 1px solid grey; */
-        box-shadow: 1px 1px 5px rgb(152, 152, 152);
-        border-radius: 5px;
         font-size: smaller;
         width: 90%;
     }
-    .message{
+
+    .message {
         width: 80%;
     }
-    .mmm{
+
+    .mmm {
         height: 10rem;
         width: 100%;
         margin: 0;
