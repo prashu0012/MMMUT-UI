@@ -1,0 +1,240 @@
+*{
+    transition: all .2s;
+}
+/* upper strap */
+.strap, .stcon, .stcontact{
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    list-style-type: none;
+    align-items: center;
+}
+.strap{
+    margin: auto;
+    justify-content: space-between;
+    background-color: rgb(178, 0, 0);
+    color: white;
+    font-size: 14px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+}
+.btnstrap{
+    background-color: rgb(240, 240, 240); 
+}
+.stcon{
+    margin: 0;
+    padding: 0;
+}
+.st{
+    border-right: 3px solid white;
+    text-decoration: none;
+    color: white;
+    transform: translateY(5px);
+}
+.st:hover{
+    color: rgb(225, 225, 225);
+}
+
+/* MMMUT name */
+.MMM-name{
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    height: 8rem;
+    /* overflow: hidden; */
+}
+
+.mmm-img{
+    width: auto;
+    height: 80%;
+    transform: scale(.8);
+    mix-blend-mode: multiply;
+}
+
+.line{
+    margin: 0.2rem auto;
+    width: 80%;
+    background-color: rgb(81, 81, 81);
+}
+
+/* slider */
+.carousel{
+    aspect-ratio: 40/9;
+    margin: 2rem auto;
+    z-index: 0;
+    width: 80%;
+}
+.slideimg{
+    aspect-ratio: 40/9;
+    width: 100%;
+}
+
+/* aboutMMM n message */
+.mmm-info{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+}
+.mmminf{
+    width: 65%;
+}
+.mmm{
+    height: 15rem;
+}
+
+.message{
+    width: max-content;
+}
+.wel-con{
+    display: flex;
+}
+
+/* message card */
+.message-card{
+    display: flex;
+    padding: 5px;
+    height: max-content;
+    align-items: center;
+    background-color: rgb(246, 246, 246);
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.Name{
+    font-size: medium;
+}
+.post{
+    color: darkred;
+    font-size: smaller;
+}
+.Name, .post{
+    margin: 0;
+}
+.det{
+    margin: auto;
+    text-align: center;
+}
+
+.message-btn{
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(176, 0, 0);
+    color: white;
+}
+.message-btn:hover{
+    font-weight: 600;
+    transform: translateY(-2px);
+    box-shadow: 1px 3px 5px rgb(167, 167, 167);
+}
+.person{
+    aspect-ratio: 1/1;
+    height: 4rem;
+    border-radius: 100%;
+}
+
+/* responsiveness */
+/* PC */
+@media only screen and (min-width: 1000px) and (max-width:1300px){
+    .MMM-name{
+        height: 7rem;
+    }
+    .mmm-img{
+        height: 60%;
+        width: auto;
+    }
+}
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+    .mmm-info{
+        display: block;
+    }
+    .message{
+        display: flex;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .message-card{
+        /* display: flex; */
+        width:max-content;
+    }.msg{
+        display: none;
+    }
+    .mmminf{
+        width: 100%;
+    }
+    .person{
+        height: 3rem;
+    }
+    .Name{
+        font-size: 12px;
+    }
+    .post{
+        font-size: 10px;
+    }
+    .message-btn{
+        font-size: smaller;
+    }
+}
+/* tab */
+@media only screen and (min-width: 760px) and (max-width:1000px){
+    .MMM-name{
+        height: 6rem;
+    }
+    .mmm-img{
+        height: 60%;
+        width: auto;
+    }
+}
+/* mob */
+@media only screen and (max-width: 800px){
+    .stcon{
+        display: none;
+    }
+    .strap{
+        justify-content: flex-end;
+    }
+    .wel-con{
+        display: block;
+    }
+    .mmm-info{
+        display: block;
+        width: 100%;
+    }
+    .mmminf{
+        margin: auto;
+        width: 80%;
+    }
+    .welcome, .msg{
+        text-align: center;
+    }
+    .msg{
+        margin-top: 1rem;
+    }
+    .message{
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 760px){
+    .MMM-name{
+        height: 5rem;
+    }
+    .mmm-img{
+        height: 60%;
+        width: auto;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width: 450px){
+    .MMM-name{
+        height: 4rem;
+    }
+    .mmm-img{
+        height: 45%;
+        width: auto;
+    }
+    .mmm{
+        height: 9rem;
+    }
+}
